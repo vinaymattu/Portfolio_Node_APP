@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('./partials/head'); %>
+  </head>
+  <body bgcolor="#0a192f">
+    <header id="header">
+        <%- include('./partials/header'); %>
+    </header>
+
+    <div class="main" style="padding-bottom: 1%;">
+      <h2 class="numbered-heading">Projects</h2>
+    
+      <div class="container-fluid mt-3" >
+          <div class="row about_box" >
+            <div class="col-md-4 project_1 box" style="border:3px solid #64ffda">
+            <div class=" inner project_background" >
+               <span class="project_head" >Event Management</span>
+               <p class="project_para" >Built an Event Management Web application to manage Events in Sapient. Using technologies HTML, CSS,
+                JavaScript, JQuery, Ajax as front End and Servlets and JDBC as backend. Database used was MySql.</p>
+            </div>
+            </div>
+            <div class="col-md-4  project_2 offset-1 box" style="border:3px solid #64ffda">
+              <div class=" inner project_background">
+                <span class="project_head">Bookstore</span>
+                <p class="project_para" >Built an e-commerce web application using Spring and Hibernate Framework as backend technologies and JSP,
+                  HTML and JSTL as the front end technologies. Database used was MySql.</p>
+             </div>
+             </div>
+          </div>
+  
+          <div class="row about_box box_gap" >
+            <div class="col-md-4 project_3 box" style="border:3px solid #64ffda">
+              <div class=" inner project_background">
+                <span class="project_head">B2B Shopping Site</span>
+                <p class="project_para">Built restful Web services and Components for the B2B website using JAVA,Spring and Hibernate Framework
+                  as backend technologies.</p>
+             </div>
+            </div>
+            <div class="col-md-4 project_4 offset-1 box" style="border:3px solid #64ffda;">
+              <div class=" inner project_background" >
+                <span class="project_head">Advisory Website</span>
+                <p class="project_para">Built web application using Spring Boot, Spring Security and Hibernate framework and RabbitMQ as backend technology.
+                  HTML, css, Jquery, javascript used as front end technology. MySql used as database server..</p>
+             </div>
+             </div>
+          </div>
+  
+        </div>
+    </div>
+   
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+  </body>
+</html>

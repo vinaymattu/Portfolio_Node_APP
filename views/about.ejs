@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+   
+    <%- include('./partials/head'); %>
+  </head>
+  <body bgcolor="#0a192f">
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <h2 class="numbered-heading">About Me</h2>
+    
+    <div class="container-fluid mt-3" >
+        <div class="row about_box" >
+          <div class="col-sm-2 p-3 about_pic ">
+            <div>
+              <img src="/images/profileImage.jpg" alt="Girl in a jacket" width="200" height="250" style="border:4px solid #64ffda">
+            </div>
+           
+          <div class="resume_button">
+            <a class="resume_link" href="/resume"  >Resume</a>
+          </div>
+           
+          </div>
+          <div class="col-sm-8 p-3 " style="border:2px solid #64ffda">
+            <div class="about_para"><p>Hello! My name is <span style="color: aquamarine;">Vinay Mattu</span>  . I have around 6 years of experience in IT Industry and works for several multinational companies like Publicis sapient and Gaurdian Life Insuarance of America.In my last organination , i worked as a Lead Engineer and was involved in adressing all design and technical challenges, identify any risk areas, and create a sound foundation for product based on budget, timeline, and technology..</p><p>Here are a few technologies I’ve been working with recently:</p></div>
+            <ul class="skills-list"><li>JavaScript</li><li>JAVA</li><li>Spring Boot</li><li>Microservices</li><li>Node.js</li><li>Hibernate</li></ul>
+        </div>
+        </div>
+      </div>
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+  </body>
+</html>

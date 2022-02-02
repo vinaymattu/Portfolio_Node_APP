@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+      <%- include('./partials/head'); %>
+      <script src="/javascripts/contact.js"></script>
+  </head>
+  <body bgcolor="#0a192f">
+    <header id="header">
+        <%- include('./partials/header'); %>
+    </header>
+
+    <div class="main">
+      <h2 class="numbered-heading">Contact Us</h2>
+    
+      <div class="container-fluid mt-3" >
+        <div class="row g-3 about_box">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" id="firstname" placeholder="First Name">
+                    <label for="name">First Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" id="lastname" placeholder="Last Name">
+                    <label for="name">Last Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Your Email">
+                    <label for="email">Your Email</label>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" id="contactNo" placeholder="Contact Number">
+                    <label for="contact">Contact Number</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit" id="submitContact">Send Message</button>
+            </div>
+        </div>
+        </div>
+    </div>
+   
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+  </body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+   
+     <%- include('./partials/head'); %>
+    
+  </head>
+  <body bgcolor="#0a192f">
+    <div id="container">
+    <header id="header">
+        <%- include('./partials/header'); %>
+    </header>
+
+    <div class="main">
+      <h2 class="numbered-heading">Service</h2>
+    
+      <div class="container-fluid mt-3" >
+          <div class="row about_box" >
+            <div class="col-md-4  box" style="border:3px solid #64ffda">
+                <div class="service-item">
+                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
+                    <h5 class="mb-2">Web Design</h5>
+                    <p class="mb-0">Designing visual imagery for websites and ensuring that they are in line with branding for clients. Working with different content management systems. Communicating design ideas using user flows, process flows, site maps, and wireframes.</p>
+                </div>
+            </div>
+            <div class="col-md-4   offset-1 box" style="border:3px solid #64ffda">
+                <div class="service-item">
+                    <i class="fab fa-2x fa-android mx-auto mb-4"></i>
+                    <h5 class="mb-2">App Development</h5>
+                    <p class="mb-0">Developing software solutions to meet customer needs. Creating and implementing the source code of new applications. Testing source code and debugging code. Evaluating existing applications and performing updates and modifications.</p>
+                </div>
+             </div>
+          </div>
+  
+          <div class="row about_box box_gap" >
+            <div class="col-md-4  box" style="border:3px solid #64ffda">
+                <div class="service-item">
+                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
+                    <h5 class="mb-2">Web Developement</h5>
+                    <p class="mb-0">building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4  offset-1 box" style="border:3px solid #64ffda">
+                <div class="service-item">
+                    <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
+                    <h5 class="mb-2">DevOps</h5>
+                    <p class="mb-0">Work with developers and the IT staff to oversee the code releases, combining an understanding of both engineering and coding. From creating and implementing systems software to analyzing data to improve existing ones.</p>
+                </div>
+             </div>
+          </div>
+  
+        </div>
+    </div>
+   
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+
+    </div>
+  </body>
+</html>

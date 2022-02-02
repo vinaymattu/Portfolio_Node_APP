@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio - <%= data.name %></title>
+    <%- include('./partials/head'); %>
+  </head>
+  <body bgcolor="#0a192f">
+    <header id="header">
+      <%- include('./partials/header'); %>
+    </header>
+    <div>
+
+      <section class="home_section">
+        <div>
+          <h1>Hi, my name is</h1>
+        </div>
+
+        <div>
+          <h2 class="big-heading"><%= data.name %></h2>
+        </div>
+
+        <div>
+          <h3 class="big-heading2 slate">I design and develop experiences that make people's lives simple.</h3>
+        </div>
+
+        <div>
+          <p class="home_para"> 
+            <%= data.description %>
+           </p>
+        </div>
+      </section>
+
+    </div>
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+  </body>
+</html>
