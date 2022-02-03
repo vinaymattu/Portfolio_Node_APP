@@ -354,6 +354,31 @@ ul.skills-list li {
     margin-left: 54px !important;
   }
 
+  .project_1{
+    width: 400px;
+    height: 274px;
+    background-image:url('/images/portfolio-1.jpg');
+  }
+  
+  .project_2{
+    width: 400px;
+    height: 274px;
+    background-image:url('/images/portfolio-2.jpg');
+  }
+  
+  
+  .project_3{
+    width: 400px;
+    height: 274px;
+    background-image:url('/images/portfolio-3.jpg');
+  }
+  
+  .project_4{
+    width: 400px;
+    height: 274px;
+    background-image:url('/images/portfolio-4.jpg');
+  }
+
 }
 
 
