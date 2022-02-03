@@ -346,6 +346,17 @@ ul.skills-list li {
   border-color: #26c38f !important;
 }
 
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+  /* insert styles here */
+
+  .about_box_2{
+    margin-left: 54px !important;
+  }
+
+}
+
+
 
 
 
