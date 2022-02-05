@@ -1,0 +1,18 @@
+[
+    {
+        "name":"Web Design",
+        "description":"Designing visual imagery for websites and ensuring that they are in line with branding for clients. Working with different content management systems. Communicating design ideas using user flows, process flows, site maps, and wireframes."
+    },
+    {
+        "name":"App Development",
+        "description":"Developing software solutions to meet customer needs. Creating and implementing the source code of new applications. Testing source code and debugging code. Evaluating existing applications and performing updates and modifications."
+    },
+    {
+        "name":"Web Developement",
+        "description":"building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience."
+    },
+    {
+        "name":"DevOps",
+        "description":"Work with developers and the IT staff to oversee the code releases, combining an understanding of both engineering and coding. From creating and implementing systems software to analyzing data to improve existing ones."
+    }
+]

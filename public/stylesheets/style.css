@@ -1,3 +1,7 @@
+/**Student name : Vinay Mattu(301203096),
+Subject :COMP229-web application development
+Date : 5 feb 2022 **/
+
 html,
 body {
    margin:0;
@@ -13,6 +17,7 @@ body {
    padding:10px;
    padding-bottom:60px;   /* Height of the footer */
 }
+
 
 #footer {
    position:fixed;
@@ -82,6 +87,8 @@ h2 {
 }
 
 
+/************************************************************** Css for Home Page *******************************************/
+
 .home_section h1 {
   margin: 0px 0px 30px 4px;
   color: #64ffda;
@@ -141,6 +148,10 @@ p {
   color: #64ffda;
 }
 
+/*************************************************************************************************************************************************/
+
+
+/*********************************************************CSS for About me Page ******************************************************************/
 .numbered-heading {
   display: flex;
   -webkit-box-align: center; 
@@ -229,6 +240,10 @@ ul.skills-list li {
   width: 100px;
 }
 
+/*****************************************************************************************************************************************************/
+
+
+/******************************************************************CSS for Project Page ************************************************************/
 .box_gap{
   padding-top: 3%;
 }
@@ -239,28 +254,24 @@ ul.skills-list li {
 }
 
 .project_1{
-  width: 500px;
-  height: 300px;
   background-image:url('/images/portfolio-1.jpg');
+  border: 3px solid #64ffda
 }
 
 .project_2{
-  width: 500px;
-  height: 300px;
   background-image:url('/images/portfolio-2.jpg');
+  border: 3px solid #64ffda
 }
 
 
 .project_3{
-  width: 500px;
-  height: 300px;
   background-image:url('/images/portfolio-3.jpg');
+  border: 3px solid #64ffda
 }
 
 .project_4{
-  width: 500px;
-  height: 300px;
   background-image:url('/images/portfolio-4.jpg');
+  border: 3px solid #64ffda
 }
 
 .project_background{
@@ -278,6 +289,18 @@ ul.skills-list li {
   padding-left: 2%;
   padding-bottom: 4px;
 }
+
+.project_row div{
+  text-align: justify;
+  }
+  
+  .project_row{
+    height: 300px ;
+  }
+
+/***************************************************************************************************************************************************/
+
+/******************************************************CSS for Service Page ***********************************************************************/
 
 .service-item {
   padding: 30px;
@@ -300,6 +323,10 @@ ul.skills-list li {
   background: #00B87B;
   color:#F2F2F2;
 }
+
+/*************************************************************************************************************************************************/
+
+/*********************************************CSS for Contact Page ******************************************************************************/
 
 .form-floating>.form-control, .form-floating>.form-select {
   height: calc(3.5rem + 2px);
@@ -345,6 +372,10 @@ ul.skills-list li {
   background-color: #26c38f !important;
   border-color: #26c38f !important;
 }
+
+
+/***************************************************************************************************************************************************/
+
 
 
 

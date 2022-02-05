@@ -1,5 +1,9 @@
+/**Student name : Vinay Mattu(301203096),
+Subject :COMP229-web application development
+Date : 5 feb 2022 **/
 jQuery(function() { 
 
+   //Method to handle the submission of the form
     $( "#submitContact" ).on( "click", function() {
       
         let firstName= $("#firstname").val();
@@ -8,8 +12,7 @@ jQuery(function() {
         let contactNo= $("#contactNo").val();
         let message= $("#message").val();
 
-        alert(firstName+" "+lastName+" "+email+" "+contactNo+" "+message);
-
+        //post method for contact submit
         $.post("/submitContact",
          {
             firstName: firstName,
@@ -22,6 +25,8 @@ jQuery(function() {
             console.log(data);
          });
 
+         //Redirecting to the home page
+         window.location = "http://"+window.location.host;
 
     });
 

@@ -1,0 +1,15 @@
+[{
+    "name": "Event Management",
+    "description": "Built an Event Management Web application to manage Events in Sapient. Using technologies HTML, CSS,JavaScript, JQuery, Ajax as front End and Servlets and JDBC as backend. Database used was MySql."
+},
+{
+    "name": "Bookstore",
+    "description": "Built an e-commerce web application using Spring and Hibernate Framework as backend technologies and JSP, HTML and JSTL as the front end technologies. Database used was MySql."
+}, {
+    "name": "B2B Shopping Site",
+    "description": "Built restful Web services and Components for the B2B website using JAVA,Spring and Hibernate Framework as backend technologies."
+}, {
+    "name": "Advisory Website",
+    "description": "Built web application using Spring Boot, Spring Security and Hibernate framework and RabbitMQ as backend technology. HTML, css, Jquery, javascript used as front end technology. MySql used as database server."
+}
+]

@@ -1,39 +1,19 @@
+/**Student name : Vinay Mattu(301203096),
+Subject :COMP229-web application development
+Date : 5 feb 2022 **/
+
+
 /* (1920x1080) Full HD Display */
 @media  screen and (max-width: 1920px) {
   
     .home_section h1{
-      padding-top: 1%;
+      padding-top: 3%;
     }
   
     .about_box_2{
       margin-left: 54px !important;
     }
-  
-    .project_1{
-      width: 400px;
-      height: 274px;
-      background-image:url('/images/portfolio-1.jpg');
-    }
-    
-    .project_2{
-      width: 400px;
-      height: 274px;
-      background-image:url('/images/portfolio-2.jpg');
-    }
-    
-    
-    .project_3{
-      width: 400px;
-      height: 274px;
-      background-image:url('/images/portfolio-3.jpg');
-    }
-    
-    .project_4{
-      width: 400px;
-      height: 274px;
-      background-image:url('/images/portfolio-4.jpg');
-    }
-  
+
     .box{
       height: 300px;
       width: 422px;
