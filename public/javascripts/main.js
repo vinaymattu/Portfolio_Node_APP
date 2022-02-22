@@ -12,4 +12,17 @@ jQuery(function() {
     }
    
     $("."+targetClass).addClass('active');
+
+    if(sessionStorage.getItem("isLoggedIn")==='true'){
+        $(".login").hide();
+        $(".logout").show();
+        $(".businessContact").show();
+    }else{
+        $(".login").show();
+        $(".logout").hide();
+        $(".businessContact").hide();
+    }
+
+   
+
 });

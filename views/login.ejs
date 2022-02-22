@@ -1,0 +1,56 @@
+<!--Student name : Vinay Mattu(301203096),
+Subject :COMP229-web application development
+Date : 5 feb 2022 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-Vinay Mattu</title>
+      <%- include('./partials/head'); %>
+      <script src="/javascripts/contact.js"></script>
+     
+  </head>
+  
+  <body bgcolor="#0a192f">
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <%- include('./partials/header'); %>
+    </header>
+
+    <div class="main" >
+      <h2 class="numbered-heading">Login</h2>
+    
+      <div class="container-fluid mt-3"  >
+        <div class="row g-3 about_box" >
+          
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" id="email" placeholder="Enter UserName">
+                    <label for="name">Enter UserName</label>
+                </div>
+            </div>
+            <div class="col-md-6">    
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="password" class="form-control border-0 bg-secondary" id="password" placeholder="Enter Password">
+                    <label for="Password">Enter Password</label>
+                </div>
+            </div>
+            <div class="col-6">
+            </div>
+
+            <div class="col-6">
+                <button class="btn btn-primary w-100 py-3" type="submit" id="login">Login</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+  </body>
+</html>

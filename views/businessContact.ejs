@@ -1,0 +1,150 @@
+<!--Student name : Vinay Mattu(301203096),
+Subject :COMP229-web application development
+Date : 5 feb 2022 -->
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    <title> Portfolio-Vinay Mattu</title>
+    <%- include('./partials/head'); %>
+    <script src="/javascripts/businessContact.js"></script>
+  </head>
+ 
+  <body bgcolor="#0a192f">
+
+    <!-- ======= Header ======= -->
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <h2 class="numbered-heading">Business Contact</h2> 
+
+    <div class="table-data">
+      <table border="1" id ="contact_table">
+          <tr>
+              <th>S.N</th>
+              <th>Contact Name</th>
+              <th>Contact Number</th>
+              <th>Contact Email</th>
+              <th>Edit</th>
+              <th>Delete</th>
+          </tr>
+          
+          <%
+          if(contactData.length!=0){
+          var i=1;
+          contactData.forEach(function(data){
+          %>
+          <tr>
+              <td><%=i; %></td>
+              <td><%=data.contactName %></td>
+              <td><%=data.contactNumber %></td>
+              <td><%=data.userEmail %></td>
+              <td><a href="#" onclick="editFunction('<%=data.id%>')">Edit</a></td>
+              <td><a href="/delete/<%=data.id%>">Delete</a></td>
+          </tr>
+          <%  i++; }) %>
+          <% } else{ %>
+              <tr>
+                  <td colspan="7">No Data Found</td>
+              </tr>
+          <% } %>
+      </table>
+      </div>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Edit Contact</h2>
+    </div>
+    <div class="modal-body">
+      <div class="container-fluid mt-3" >
+        <div class="row g-3 about_box">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" id="name" placeholder="Contact Name">
+                    <label for="name">Contact Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" id="contactnumber" placeholder="Contact Number">
+                    <label for="name">Contact Number</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating">
+                    <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Contact Email">
+                    <label for="email">Contact Email</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit" id="editContact">Edit Contact</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <%- include('./partials/footer'); %>
+  </footer><!-- End  Footer -->
+
+  <script>
+     var currentId;
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+   
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    //Method to handle the submission of the form
+     $("#editContact").on( "click", function() {
+       
+         let contactName= $("#name").val();
+         let contactNumber= $("#contactnumber").val();
+         let email= $("#email").val();
+       
+         //post method for contact submit
+         $.post("/edit",
+          {
+            id:currentId,
+            contactName: contactName,
+            contactNumber: contactNumber,
+            userEmail:email
+          },
+          function (data, status) {
+            modal.style.display = "none";
+            location.reload();
+          });     
+    });
+
+    function editFunction(id){
+      currentId=id;
+      modal.style.display = "block";
+    }
+ 
+ </script>
+  </body>
+</html>
